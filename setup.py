@@ -29,6 +29,9 @@ setup(name='edirap.organization',
           'plone.app.dexterity',
           'plone.namedfile [blobs]',
           'collective.grok',
+          'plone.app.dexterity [grok, relations]',
+          'collective.dexteritytextindexer',
+          'collective.miscbehaviors',
           # -*- Extra requirements: -*-
       ],
       extras_require={
