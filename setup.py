@@ -32,6 +32,7 @@ setup(name='edirap.organization',
           'plone.app.dexterity [grok, relations]',
           'collective.dexteritytextindexer',
           'collective.miscbehaviors',
+          'ploneun.vocabularies',
           # -*- Extra requirements: -*-
       ],
       extras_require={
