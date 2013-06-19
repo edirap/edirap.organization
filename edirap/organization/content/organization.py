@@ -29,7 +29,7 @@ class IOrganization(form.Schema, IImageScaleTraversable):
     title = schema.TextLine(title=u'Name', 
                          description=u'Name of organization.')
 
-    description = schema.TextLine(title=u'Description',
+    description = schema.Text(title=u'Description',
                                   description=u'Brief description '
                                   'of organization.'
                                   )
@@ -39,7 +39,7 @@ class IOrganization(form.Schema, IImageScaleTraversable):
         vocabulary = "ploneun.vocabularies.organizations.types"
     )
 
-    organization_type = schema.Choice(
+    organization_area = schema.Choice(
         title=_(u'Area'),
         vocabulary = "ploneun.vocabularies.organizations.areas"
     )
